@@ -4,10 +4,18 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Cards implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
 	private String projeto;
@@ -15,11 +23,18 @@ public class Cards implements Serializable {
 	private String status;
 	private Date data;
 	
+	
+	
+	
+	
 	public Cards() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Cards(Integer id, String nome, String projeto, String descricao, String status, Date data) {
+
+
+	public Cards(Integer id, String nome, String projeto, String descricao, String status, Date data
+			) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -27,7 +42,10 @@ public class Cards implements Serializable {
 		this.descricao = descricao;
 		this.status = status;
 		this.data = data;
+		
 	}
+
+
 
 	public Integer getId() {
 		return id;
@@ -93,7 +111,8 @@ public class Cards implements Serializable {
 		Cards other = (Cards) obj;
 		return Objects.equals(id, other.id);
 	}
-	
+
+
 	
 	
 	
