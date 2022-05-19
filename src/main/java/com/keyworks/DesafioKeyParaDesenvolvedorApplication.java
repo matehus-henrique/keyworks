@@ -28,13 +28,13 @@ public class DesafioKeyParaDesenvolvedorApplication implements CommandLineRunner
 		SimpleDateFormat hoje = new SimpleDateFormat("dd/MM/yyy HH:mm");
 		
 		
-		Cards card1 = new Cards(null, "João", "java", "fazer uma API em java", "Em andamento", hoje.parse("18/05/2022 10:52"));
+		Cards card1 = new Cards(null, "João", "java", "fazer uma API em java", "Em andamento", hoje.parse("30/05/2022 10:52"));
 		
-		Cards card2 = new Cards(null, "Pedro", "php", "fazer uma API em php", "Em andamento", hoje.parse("18/05/2022 10:52"));
+		Cards card2 = new Cards(null, "Pedro", "php", "fazer uma API em php", "Em andamento", hoje.parse("28/05/2022 17:52"));
 		
-		Cards card3 = new Cards(null, "Lucas", "java", "fazer uma API em java", "Pronto", hoje.parse("18/05/2022 10:52"));
+		Cards card3 = new Cards(null, "Lucas", "java", "fazer uma API em java", "Pronto", hoje.parse("10/05/2022 11:52"));
 		
-		Cards card4 = new Cards(null, "Maria", "php", "fazer uma API em php", "Em andamento", hoje.parse("18/05/2022 10:52"));
+		Cards card4 = new Cards(null, "Maria", "php", "fazer uma API em php", "Em atraso", hoje.parse("18/05/2022 20:52"));
 		
 		cardsRepository.saveAll(Arrays.asList(card1,card2,card3,card4));
 	}
