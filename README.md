@@ -96,7 +96,7 @@ cd backend
 
 ```bash
 # clonar repositório
-git clone [https://github.com/devsuperior/sds1-wmazoni](https://github.com/matehus-henrique/keyworks)
+git clone (https://github.com/matehus-henrique/keyworks)
 
 
 
